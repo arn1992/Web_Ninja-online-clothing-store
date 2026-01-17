@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+    --background-color: #111111;
+    --text-color: #FFFFFF;
+    --primary-accent-color: #D4AF37; /* Gold accent */
+    --card-background-color: #1A1A1A;
+    --border-color: #333333;
+    --font-family: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+    background-color: var(--background-color);
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--primary-accent-color);
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: var(--primary-accent-color);
+}
+
+/* Main Content */
+main {
+    /* Removed padding to allow hero to be full-width */
+}
+
+#hero {
+    text-align: center;
+    padding: 8rem 0;
+    background-image: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url('/image/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 2.5rem;
+    background-color: var(--primary-accent-color);
+    color: var(--background-color);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e7c350;
+    transform: translateY(-2px);
+}
+
+/* New Arrivals */
+#new-arrivals {
+    padding: 4rem 0;
+}
+
+#new-arrivals h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.product-card {
+    background-color: var(--card-background-color);
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+}
+
+.product-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    flex-grow: 1;
+}
+
+.product-price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary-accent-color);
+    margin-bottom: 1rem;
+}
+
+.product-options {
+    font-size: 0.9rem;
+}
+
+.option-group {
+    margin-bottom: 0.75rem;
+}
+
+.option-group:last-child {
+    margin-bottom: 0;
+}
+
+.option-label {
+    font-weight: 600;
+    margin-right: 0.5rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.option-value {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    margin: 0.2rem;
+    font-size: 0.8rem;
+    background-color: var(--background-color);
+}
+
+/* Testimonials */
+#testimonials {
+    padding: 4rem 0;
+    background-color: var(--card-background-color);
+}
+
+#testimonials h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial-card {
+    background-color: var(--background-color);
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-content {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.testimonial-author {
+    font-style: italic;
+    font-weight: 600;
+    color: var(--primary-accent-color);
+    align-self: flex-end;
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 2rem 0;
+    /* margin-top: 4rem; */ /* Removed to align with new main padding */
+    border-top: 1px solid var(--border-color);
+}
+
+.site-footer p {
+    color: rgba(255, 255, 255, 0.7);
+}
