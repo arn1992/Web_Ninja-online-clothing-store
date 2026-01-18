@@ -172,7 +172,7 @@ img {
     display: flex;
     align-items: center;
     text-align: center;
-    margin-top: 70px; /* Header height */
+    /* The margin-top will be set by JS if header height is dynamic, for now a static value is fine */
 }
 
 .hero-overlay {
