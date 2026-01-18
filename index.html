@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- A placeholder, will use inline SVG for reliability -->
 </head>
 <body>
 
@@ -25,6 +24,7 @@
                         <li><a href="#">Kids</a></li>
                         <li><a href="#">New Arrivals</a></li>
                         <li><a href="#">Sale</a></li>
+                        <li><a href="#about">About Us</a></li>
                     </ul>
                 </nav>
                 <button class="mobile-nav-toggle" aria-label="Toggle navigation">&#9776;</button>
@@ -33,7 +33,7 @@
     </header>
 
     <main>
-        <section id="hero" class="hero-section" style="background-image: url('/image/background.jpg');">
+        <section id="hero" class="hero-section" style="background-image: url('/images/hero-banner.jpg');">
             <div class="hero-overlay">
                 <div class="container">
                     <div class="hero-text">
@@ -50,21 +50,21 @@
                 <div class="features-grid">
                     <div class="feature-item">
                         <div class="feature-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M581.6 142.4C553.9 129.5 524.1 128 496 128H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h176c17.3 0 33.3 1.9 48.4 5.3l-80.5 80.5c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L591.8 241c12.5-12.5 12.5-32.8 0-45.3L581.6 142.4zM48 320c-26.5 0-48 21.5-48 48s21.5 48 48 48h16c0 35.3 28.7 64 64 64s64-28.7 64-64h112c0 35.3 28.7 64 64 64s64-28.7 64-64h16c26.5 0 48-21.5 48-48s-21.5-48-48-48H48zm48 48a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm224 0a16 16 0 1 0 -32 0 16 16 0 1 0 32 0z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentColor"><path d="M581.6 142.4C553.9 129.5 524.1 128 496 128H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h176c17.3 0 33.3 1.9 48.4 5.3l-80.5 80.5c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L591.8 241c12.5-12.5 12.5-32.8 0-45.3L581.6 142.4zM48 320c-26.5 0-48 21.5-48 48s21.5 48 48 48h16c0 35.3 28.7 64 64 64s64-28.7 64-64h112c0 35.3 28.7 64 64 64s64-28.7 64-64h16c26.5 0 48-21.5 48-48s-21.5-48-48-48H48zm48 48a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm224 0a16 16 0 1 0 -32 0 16 16 0 1 0 32 0z"/></svg>
                         </div>
                         <h3>Free & Fast Shipping</h3>
                         <p>Enjoy free shipping on all orders over $50. Get your style delivered in 2-4 business days.</p>
                     </div>
                     <div class="feature-item">
                         <div class="feature-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM119.2 206.2c-6.3-10.1-5.1-22.9 2.9-31.4l32-32c10.1-10.1 26.5-10.1 36.6 0l40.8 40.8c5.3 5.3 13.8 5.3 19.1 0l40.8-40.8c10.1-10.1 26.5-10.1 36.6 0l32 32c8 8.5 9.2 21.3 2.9 31.4l-80.3 128.4c-12.5 20-41.1 20-53.6 0L119.2 206.2z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM119.2 206.2c-6.3-10.1-5.1-22.9 2.9-31.4l32-32c10.1-10.1 26.5-10.1 36.6 0l40.8 40.8c5.3 5.3 13.8 5.3 19.1 0l40.8-40.8c10.1-10.1 26.5-10.1 36.6 0l32 32c8 8.5 9.2 21.3 2.9 31.4l-80.3 128.4c-12.5 20-41.1 20-53.6 0L119.2 206.2z"/></svg>
                         </div>
                         <h3>Sustainably Sourced</h3>
                         <p>We partner with ethical suppliers to bring you high-quality, eco-friendly materials.</p>
                     </div>
                     <div class="feature-item">
                         <div class="feature-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M466.5 83.7l-192-80a48.15 48.15 0 0 0 -36.9 0l-192 80C27.7 93.7 16 115.8 16 140.1V368c0 24.3 11.7 46.4 30.5 56.3l192 80a48.15 48.15 0 0 0 36.9 0l192-80c18.8-9.8 30.5-32 30.5-56.3V140.1c0-24.3-11.7-46.4-30.5-56.4zM232.2 361.4l-112-112c-6.2-6.2-6.2-16.4 0-22.6l22.6-22.6c6.2-6.2 16.4-6.2 22.6 0l89.4 89.4 130.2-130.2c6.2-6.2 16.4-6.2 22.6 0l22.6 22.6c6.2 6.2 6.2 16.4 0 22.6l-152.8 152.8c-6.2 6.3-16.4 6.3-22.6 0z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"><path d="M466.5 83.7l-192-80a48.15 48.15 0 0 0 -36.9 0l-192 80C27.7 93.7 16 115.8 16 140.1V368c0 24.3 11.7 46.4 30.5 56.3l192 80a48.15 48.15 0 0 0 36.9 0l192-80c18.8-9.8 30.5-32 30.5-56.3V140.1c0-24.3-11.7-46.4-30.5-56.4zM232.2 361.4l-112-112c-6.2-6.2-6.2-16.4 0-22.6l22.6-22.6c6.2-6.2 16.4-6.2 22.6 0l89.4 89.4 130.2-130.2c6.2-6.2 16.4-6.2 22.6 0l22.6 22.6c6.2 6.2 6.2 16.4 0 22.6l-152.8 152.8c-6.2 6.3-16.4 6.3-22.6 0z"/></svg>
                         </div>
                         <h3>Secure Checkout</h3>
                         <p>Shop with confidence. Your data is always protected with our encrypted payment gateway.</p>
@@ -78,7 +78,7 @@
                 <h2 class="section-title">Featured Products</h2>
                 <div class="product-grid">
                     <div class="product-card">
-                        <img src="/image/essential-crew.jpg" alt="The Essential Crew">
+                        <img src="/images/essential-crew.jpg" alt="The Essential Crew">
                         <div class="product-info">
                             <h3>The Essential Crew</h3>
                             <p class="price">$25.00</p>
@@ -121,11 +121,11 @@
             <div class="container">
                 <div class="about-content">
                     <div class="about-image">
-                        <img src="/image/about-us.jpg" alt="Our Story">
+                        <img src="/images/about-us.jpg" alt="About our store">
                     </div>
                     <div class="about-text">
-                        <h2>Our Story: Clothing with a Conscience</h2>
-                        <p>Founded in 2022, our mission has always been simple: create high-quality, stylish clothing that you can feel good about wearing. We believe in fashion that doesn't come at the expense of our planet. That's why we partner with ethical factories and source only the finest, sustainable materials. It's not just about looking good; it's about doing good.</p>
+                        <h2>About Us</h2>
+                        <p>Our online clothing store is a modern e-commerce platform designed to bring the latest fashion directly to customers’ homes. We offer a wide selection of clothing for men, women, and kids, including casual wear, formal attire, seasonal collections, and everyday essentials. Our store partners with reliable suppliers and designers to ensure high-quality fabrics, stylish designs, and competitive pricing. With easy navigation, secure payments, and fast delivery, we aim to make online shopping simple, enjoyable, and reliable. Whether customers are looking for everyday comfort or standout fashion pieces, our platform provides options to match every style and occasion.</p>
                     </div>
                 </div>
             </div>
