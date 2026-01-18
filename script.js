@@ -2,20 +2,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
     const mainNav = document.querySelector('.main-nav');
+    const siteHeader = document.querySelector('.site-header');
+    const heroSection = document.querySelector('.hero-section');
+
+    // Adjust hero section padding to account for fixed header
+    const adjustHeroPadding = () => {
+        if (siteHeader && heroSection) {
+            const headerHeight = siteHeader.offsetHeight;
+            heroSection.style.paddingTop = `${headerHeight}px`;
+        }
+    };
 
     if (mobileNavToggle && mainNav) {
         mobileNavToggle.addEventListener('click', function() {
-            // This is a basic implementation. A real site would likely add a class
-            // to the nav to make it visible, e.g., mainNav.classList.toggle('active');
-            // For this initial build, we'll just log to the console to show it's hooked up.
-            console.log('Mobile navigation toggle clicked.');
-
-            // A simple alert to demonstrate functionality without complex CSS changes yet.
-            alert('Mobile menu would open here!');
+            mainNav.classList.toggle('active');
         });
     }
 
-    // Smooth scroll for anchor links (if any are added later)
+    // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -55,5 +59,9 @@ document.addEventListener('DOMContentLoaded', function() {
         section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
         observer.observe(section);
     });
+
+    // Initial call to adjust padding and on resize
+    adjustHeroPadding();
+    window.addEventListener('resize', adjustHeroPadding);
 
 });
