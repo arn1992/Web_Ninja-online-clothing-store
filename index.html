@@ -5,119 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Clothing Store</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- A placeholder, will use inline SVG for reliability -->
 </head>
 <body>
 
     <header class="site-header">
         <div class="container">
-            <h1 class="site-title">AURA</h1>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Men</a></li>
-                    <li><a href="#">Women</a></li>
-                    <li><a href="#">Kids</a></li>
-                    <li><a href="#">New Arrivals</a></li>
-                </ul>
-            </nav>
+            <div class="header-content">
+                <h1 class="logo">ELEGANCE</h1>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+            </div>
         </div>
     </header>
 
     <main>
-        <section id="hero">
-            <div class="container">
-                <h2>Effortless Style, Delivered.</h2>
-                <p>Discover curated collections and timeless essentials. Your wardrobe upgrade starts here.</p>
-                <a href="/products" class="cta-button">Shop The Collection</a>
-            </div>
-        </section>
-
-        <section id="new-arrivals">
-            <div class="container">
-                <h2>New Arrivals</h2>
-                <div class="product-grid">
-                    <!-- Product 1 -->
-                    <article class="product-card">
-                        <img src="https://lh3.googleusercontent.com/u/0/d/1BOE2c46OY6yDuL7b-MrHHem4Z8IEG-gj" alt="Classic Crewneck Tee" class="product-image">
-                        <h3 class="product-name">Classic Crewneck Tee</h3>
-                        <p class="product-price">$29.99</p>
-                        <div class="product-options">
-                            <div class="option-group">
-                                <span class="option-label">Size:</span>
-                                <span class="option-value">S</span>
-                                <span class="option-value">M</span>
-                                <span class="option-value">L</span>
-                                <span class="option-value">XL</span>
-                            </div>
-                            <div class="option-group">
-                                <span class="option-label">Color:</span>
-                                <span class="option-value">White</span>
-                                <span class="option-value">Black</span>
-                                <span class="option-value">Navy</span>
-                            </div>
-                        </div>
-                    </article>
-                    <!-- Product 2 -->
-                    <article class="product-card">
-                        <img src="image/new_arrival_2.jpg" alt="Slim-Fit Chinos" class="product-image">
-                        <h3 class="product-name">Slim-Fit Chinos</h3>
-                        <p class="product-price">$75.50</p>
-                        <div class="product-options">
-                            <div class="option-group">
-                                <span class="option-label">Size:</span>
-                                <span class="option-value">30x30</span>
-                                <span class="option-value">32x30</span>
-                                <span class="option-value">32x32</span>
-                                <span class="option-value">34x32</span>
-                            </div>
-                            <div class="option-group">
-                                <span class="option-label">Color:</span>
-                                <span class="option-value">Khaki</span>
-                                <span class="option-value">Olive</span>
-                                <span class="option-value">Gray</span>
-                            </div>
-                        </div>
-                    </article>
-                    <!-- Product 3 -->
-                    <article class="product-card">
-                        <img src="image/new_arrival_3.jpg" alt="Denim Trucker Jacket" class="product-image">
-                        <h3 class="product-name">Denim Trucker Jacket</h3>
-                        <p class="product-price">$120.00</p>
-                        <div class="product-options">
-                            <div class="option-group">
-                                <span class="option-label">Size:</span>
-                                <span class="option-value">M</span>
-                                <span class="option-value">L</span>
-                                <span class="option-value">XL</span>
-                            </div>
-                            <div class="option-group">
-                                <span class="option-label">Color:</span>
-                                <span class="option-value">Classic Blue</span>
-                                <span class="option-value">Washed Black</span>
-                            </div>
-                        </div>
-                    </article>
+        <section id="hero" class="hero-section" style="background-image: url('/image/background.jpg');">
+            <div class="hero-overlay">
+                <div class="container">
+                    <div class="hero-text">
+                        <h2>Style Redefined, Comfort Remastered</h2>
+                        <p>Discover our new collection of premium, sustainable fabrics designed for the modern wardrobe.</p>
+                        <a href="/products/new" class="btn btn-primary">Shop New Arrivals</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="testimonials">
+        <section id="features" class="features-section">
             <div class="container">
-                <h2>What Our Customers Say</h2>
-                <div class="testimonial-grid">
-                    <article class="testimonial-card">
-                        <p class="testimonial-content">"The quality of the fabric is exceptional. I feel so elegant every time I wear their pieces. Truly a five-star experience."</p>
-                        <footer class="testimonial-author">- Sarah J., New York, NY</footer>
-                    </article>
-                    <article class="testimonial-card">
-                        <p class="testimonial-content">"Seamless shopping from start to finish. My order arrived faster than expected, and the packaging was as premium as the clothes inside."</p>
-                        <footer class="testimonial-author">- Michael B., London, UK</footer>
-                    </article>
-                    <article class="testimonial-card">
-                        <p class="testimonial-content">"I am absolutely in love with the latest collection. The designs are modern yet timeless. I always get compliments when I wear their dresses."</p>
-                        <footer class="testimonial-author">- Chloe T., Paris, FR</footer>
-                    </article>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M581.6 142.4C553.9 129.5 524.1 128 496 128H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h176c17.3 0 33.3 1.9 48.4 5.3l-80.5 80.5c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L591.8 241c12.5-12.5 12.5-32.8 0-45.3L581.6 142.4zM48 320c-26.5 0-48 21.5-48 48s21.5 48 48 48h16c0 35.3 28.7 64 64 64s64-28.7 64-64h112c0 35.3 28.7 64 64 64s64-28.7 64-64h16c26.5 0 48-21.5 48-48s-21.5-48-48-48H48zm48 48a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm224 0a16 16 0 1 0 -32 0 16 16 0 1 0 32 0z"/></svg>
+                        </div>
+                        <h3>Free & Fast Shipping</h3>
+                        <p>Enjoy free shipping on all orders over $50. Get your style delivered in 2-4 business days.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM119.2 206.2c-6.3-10.1-5.1-22.9 2.9-31.4l32-32c10.1-10.1 26.5-10.1 36.6 0l40.8 40.8c5.3 5.3 13.8 5.3 19.1 0l40.8-40.8c10.1-10.1 26.5-10.1 36.6 0l32 32c8 8.5 9.2 21.3 2.9 31.4l-80.3 128.4c-12.5 20-41.1 20-53.6 0L119.2 206.2z"/></svg>
+                        </div>
+                        <h3>Sustainably Sourced</h3>
+                        <p>We partner with ethical suppliers to bring you high-quality, eco-friendly materials.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M466.5 83.7l-192-80a48.15 48.15 0 0 0 -36.9 0l-192 80C27.7 93.7 16 115.8 16 140.1V368c0 24.3 11.7 46.4 30.5 56.3l192 80a48.15 48.15 0 0 0 36.9 0l192-80c18.8-9.8 30.5-32 30.5-56.3V140.1c0-24.3-11.7-46.4-30.5-56.4zM232.2 361.4l-112-112c-6.2-6.2-6.2-16.4 0-22.6l22.6-22.6c6.2-6.2 16.4-6.2 22.6 0l89.4 89.4 130.2-130.2c6.2-6.2 16.4-6.2 22.6 0l22.6 22.6c6.2 6.2 6.2 16.4 0 22.6l-152.8 152.8c-6.2 6.3-16.4 6.3-22.6 0z"/></svg>
+                        </div>
+                        <h3>Secure Checkout</h3>
+                        <p>Shop with confidence. Your data is always protected with our encrypted payment gateway.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured-products" class="product-section">
+            <div class="container">
+                <h2 class="section-title">Featured Products</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="/image/essential-crew.jpg" alt="The Essential Crew">
+                        <div class="product-info">
+                            <h3>The Essential Crew</h3>
+                            <p class="price">$25.00</p>
+                            <a href="#" class="btn btn-secondary">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://www.reitmans.com/on/demandware.static/-/Sites-Reitmans-catalog/default/dw7c81d9cf/images/xlarge/reitmans_484401_1_0.jpg" alt="The Urban Slim Fit">
+                        <div class="product-info">
+                            <h3>The Urban Slim Fit</h3>
+                            <p class="price">$85.00</p>
+                            <a href="#" class="btn btn-secondary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <p class="quote">"The quality of the fabric is incredible. I have never worn a t-shirt this comfortable. Will be buying more!"</p>
+                        <cite>&mdash; Alex R., New York, NY</cite>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="quote">"Finally found jeans that actually fit perfectly. The Urban Slim Fit is my new favorite pair. Highly recommend!"</p>
+                        <cite>&mdash; Jessica M., Austin, TX</cite>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="quote">"Great customer service and fast shipping. The All-Weather Jacket is exactly what I was looking for."</p>
+                        <cite>&mdash; David L., San Francisco, CA</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="/image/about-us.jpg" alt="Our Story">
+                    </div>
+                    <div class="about-text">
+                        <h2>Our Story: Clothing with a Conscience</h2>
+                        <p>Founded in 2022, our mission has always been simple: create high-quality, stylish clothing that you can feel good about wearing. We believe in fashion that doesn't come at the expense of our planet. That's why we partner with ethical factories and source only the finest, sustainable materials. It's not just about looking good; it's about doing good.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -125,7 +134,7 @@
 
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2024 AURA. All Rights Reserved.</p>
+            <p>&copy; 2024 Online Clothing Store. All Rights Reserved.</p>
         </div>
     </footer>
 
